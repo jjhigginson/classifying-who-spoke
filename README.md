@@ -31,3 +31,5 @@ The general idea is to compare the utterances from each speaker in the training 
 Dynamic Time Warping worked well to distinguish nine male speakers by their utterances of two Japanese vowels _/ae/_, achieving about 94% accuracy overall. (As mentioned in the paper by Kudo, Toyama, and Shimbo, they achieved a 94.1% recognition rate.) 
 
 If my modeling technique was slightly altered, I may be able to improve performance. More specifically, instead of averaging all utterances for each speaker in the training dataset, the 30 utterances per speaker could be individually compared to every utterance in the testing dataset, and, with a minimum distance found via DTW, a **majority vote** would instead determine the match.
+
+The full analysis (Python Jupyter Notebook) can be viewed [here](https://nbviewer.org/github/jjhigginson/classifying-who-spoke/blob/main/Classifying_Utterances.ipynb).
